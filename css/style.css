@@ -13,17 +13,20 @@ img{
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: red;
 }
 .carosello{
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  width: 50%;
+  max-width: 600px;
+  height: 330px;
   overflow: hidden;
 }
 
 #full-image{
   width: 80%;
+  height: 100%;
 }
 
 #full-image .item{
@@ -32,7 +35,7 @@ img{
 }
 
 #full-image .item img{
-  height: 500px;
+  height: 100%;
 }
 
 #full-image .item.active{
@@ -43,10 +46,9 @@ img{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  flex-wrap: wrap;
-  width: 15.9%;
-  height: 500px;
-  overflow: hidden;
+  flex-wrap: nowrap;
+  width: 20%;
+  height: 100%;
   background-color: black;
   position: relative;
 }
@@ -56,7 +58,7 @@ img{
 }
 
 .nav-image.active{
-  border: 5px solid white;
+  border: 1px solid white;
   opacity: 100%;
 }
 
@@ -67,11 +69,11 @@ img{
   background-color: white;
   cursor: pointer;
   z-index: 900;
-  font-size: 35px;
-  width: 50px;
-  height: 50px;
+  font-size: 25px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
-  line-height: 50px;
+  line-height: 25px;
   text-align: center;
 }
 
@@ -82,6 +84,3 @@ img{
 #btn-up{
   top: 5%;
 }
-
-
-

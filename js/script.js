@@ -19,6 +19,7 @@ for(let i = 0; i < images.length; i++){
 }
 
 const items = document.getElementsByClassName('item');
+const navImage = document.getElementsByClassName('nav-image');
 
 console.log('items',items);
 console.log('contatore',contatore);
@@ -27,10 +28,11 @@ console.log('item in base al contatore', items[contatore]);
 const prev = document.getElementById('btn-down');
 const next = document.getElementById('btn-up');
 
-prev.addEventListener('click',function(){
+next.addEventListener('click',function(){
   console.log('contatore',contatore);
   console.log(items[contatore]);
   items[contatore].classList.remove('active');
+  navImage[contatore].classList.remove('active');
   console.log(items[contatore]);
 
   contatore--;
@@ -38,17 +40,20 @@ prev.addEventListener('click',function(){
 
   console.log('contatore',contatore);
   items[contatore].classList.add('active');
+  navImage[contatore].classList.add('active');
   console.log(items[contatore]);
 });
 
-next.addEventListener('click',function(){
+prev.addEventListener('click',function(){
   console.log('contatore',contatore);
   console.log(items[contatore]);
   items[contatore].classList.remove('active');
+  navImage[contatore].classList.remove('active');
   console.log(items[contatore]);
 
   contatore++;
   if(contatore > items.length - 1) contatore = 0;
   items[contatore].classList.add('active');
+  navImage[contatore].classList.add('active');
   console.log(items[contatore]);
 });
