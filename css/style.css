@@ -16,10 +16,12 @@ img{
   align-items: center;
 }
 .carosello{
+  height: 600px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  width: 60%;
+  width: 50%;
+  overflow: hidden;
 }
 
 .full-image{
@@ -29,6 +31,20 @@ img{
 .nav-menu{
   display: flex;
   flex-direction: column;
-  width: 16%;
+  justify-content: flex-start;
+  width: 17%;
+  max-height: 100%;
+  overflow: hidden;
+  background-color: black;
+}
+
+.nav-menu .nav-image{
+  height: calc(100% / 5);
+  opacity: 50%;
+}
+
+.nav-image.active{
+  border: 5px solid white;
+  opacity: 100%;
 }
 
