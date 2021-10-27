@@ -28,6 +28,14 @@ img{
   width: 80%;
 }
 
+.full-image .image{
+  display: none;
+}
+
+.full-image .image.active{
+  display: block;
+}
+
 .nav-menu{
   display: flex;
   flex-direction: column;
@@ -41,6 +49,7 @@ img{
 .nav-menu .nav-image{
   height: calc(100% / 5);
   opacity: 50%;
+  cursor: pointer;
 }
 
 .nav-image.active{
