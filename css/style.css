@@ -13,19 +13,18 @@ img{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: red;
 }
 .carosello{
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  max-width: 600px;
-  height: 330px;
+  max-width: 900px;
+  height: 300px;
   overflow: hidden;
 }
 
 #full-image{
-  width: 80%;
+  width: 750px;
   height: 100%;
 }
 
@@ -35,7 +34,9 @@ img{
 }
 
 #full-image .item img{
+  width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 #full-image .item.active{
@@ -47,13 +48,20 @@ img{
   flex-direction: column;
   justify-content: flex-start;
   flex-wrap: nowrap;
-  width: 20%;
+  width: 150px;
   height: 100%;
   background-color: black;
   position: relative;
 }
 
+.thumb{
+  height: calc(100%/5);
+}
+
 .nav-menu .nav-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   opacity: 50%;
 }
 
